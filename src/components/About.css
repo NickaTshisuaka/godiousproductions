@@ -1,0 +1,135 @@
+/* ------------------------------
+     THEME VARIABLES
+------------------------------ */
+
+:root {
+  --bg: #0b1930;
+  --text: #f2f2f2;
+  --gold: #d4af37;
+  --card-bg: rgba(255, 255, 255, 0.05);
+  --card-border: #d4af37;
+  --shadow: rgba(212, 175, 55, 0.25);
+}
+
+[data-theme="dark"] {
+  --bg: #0b1930;
+  --text: #f2f2f2;
+  --gold: #d4af37;
+  --card-bg: rgba(255, 255, 255, 0.05);
+  --card-border: #d4af37;
+  --shadow: rgba(212, 175, 55, 0.25);
+}
+
+/* ------------------------------
+     ABOUT SECTION LAYOUT
+------------------------------ */
+
+.about-wrap {
+  width: 100%;
+  background: var(--bg);
+
+  /* remove height */
+  padding: 4rem 0;
+  scroll-margin-top: 80px; /* prevents anchor clipping */
+}
+
+.about-flex {
+  width: 90%;
+  max-width: 1350px;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+}
+
+/* ------------------------------
+     TEXT & IMAGE STYLES
+------------------------------ */
+
+.about-content {
+  flex: 1.2;
+}
+
+.about-title {
+  color: var(--gold);
+  font-size: 2.6rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+}
+
+.about-text {
+  color: var(--text);
+  background: var(--card-bg);
+  border-left: 3px solid var(--gold);
+  padding: 1rem 1.2rem;
+  border-radius: 6px;
+
+  line-height: 1.7;
+  font-size: 1rem;
+  margin-bottom: 1.3rem;
+}
+
+.about-image-wrap {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.about-image {
+  width: 85%;
+  border-radius: 12px;
+  border: 3px solid var(--card-border);
+  box-shadow: 0 0 25px var(--shadow);
+  object-fit: cover;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* cinematic hover on large screens */
+@media (min-width: 900px) {
+  .about-image:hover {
+    transform: scale(1.04);
+    box-shadow: 0 0 40px var(--shadow);
+  }
+}
+
+/* ------------------------------
+         RESPONSIVE
+------------------------------ */
+
+@media (max-width: 1050px) {
+  .about-title {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .about-flex {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-title {
+    font-size: 2rem;
+  }
+
+  .about-image {
+    width: 70%;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-title {
+    font-size: 1.8rem;
+  }
+
+  .about-text {
+    font-size: 0.92rem;
+  }
+
+  .about-image {
+    width: 90%;
+  }
+}

@@ -1,0 +1,49 @@
+:root {
+  --bg: #ffffff;
+  --text: #06043a;
+  --accent: #c59b1c;
+  --light-blue: #e5f4ff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  scroll-behavior: smooth;
+}
+
+section {
+  width: 100%;
+  padding: 120px 10%;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+}
+
+p {
+  opacity: 0.85;
+  line-height: 1.6;
+}
+
+button, .btn, .cta {
+  background: var(--accent);
+  color: white;
+  padding: 8px 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+button:hover, .cta:hover {
+  transform: translateY(-4px);
+  opacity: 0.9;
+}
