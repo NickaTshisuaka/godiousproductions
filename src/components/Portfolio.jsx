@@ -5,13 +5,50 @@ import "./Portfolio.css";
 
 export default function PortfolioCarousel() {
   const items = [
-    { id: "wedding", title: "Cinematic Wedding Highlight Reel", caption: "Emotion-filled wedding highlights edited with cinematic storytelling.", video: "https://www.w3schools.com/html/mov_bbb.mp4", icon: <FaPlay /> },
-    { id: "podcast", title: "Podcast Studio Edit", caption: "Clean multi-cam editing + crisp audio mixing for long-form podcasts.", video: "https://www.w3schools.com/html/movie.mp4", icon: <FaExternalLinkAlt /> },
-    { id: "trailer", title: "Trailer / Teaser Edit", caption: "High-energy cuts crafted for hype, suspense, and social media promos.", video: "https://www.w3schools.com/html/mov_bbb.mp4", icon: <FaPlay /> },
-    { id: "vlog", title: "Vlog Edit (Travel / Lifestyle)", caption: "Dynamic vlog edits built for personality, pacing, and engagement.", video: "https://www.w3schools.com/html/movie.mp4", icon: <FaPlay /> },
-    { id: "motion", title: "Motion Graphics + Text Animation", caption: "Professional motion graphics, lyric videos, intros & lower thirds.", video: "https://www.w3schools.com/html/mov_bbb.mp4", icon: <FaExternalLinkAlt /> },
-    { id: "ministry", title: "Ministry / Teaching Edits", caption: "Impactful edits for sermons, testimonies, and teaching content.", video: "https://www.w3schools.com/html/movie.mp4", icon: <FaPlay /> },
-  ];
+  {
+    id: "wedding",
+    title: "Cinematic Wedding Highlight Reel",
+    caption: "Emotion-filled wedding highlights edited with cinematic storytelling.",
+    video: "https://res.cloudinary.com/dwgghvvtx/video/upload/v1764928806/PinDown.io__nigerianwedding_1764836030_j8xoby.mp4",
+    icon: <FaPlay />
+  },
+  {
+    id: "podcast",
+    title: "Podcast Studio Edit",
+    caption: "Clean multi-cam editing + crisp audio mixing for long-form podcasts.",
+    video: "https://res.cloudinary.com/dwgghvvtx/video/upload/v1764928727/PinDown.io__elevatestudiosgramado_1764836069_dlehyb.mp4",
+    icon: <FaExternalLinkAlt />
+  },
+  {
+    id: "trailer",
+    title: "Trailer / Teaser Edit",
+    caption: "High-energy cuts crafted for hype, suspense, and social media promos.",
+    video: "https://res.cloudinary.com/dwgghvvtx/video/upload/v1764991663/WhatsApp_Video_2025-12-05_at_12.11.40_fhvpln.mp4",
+    icon: <FaPlay />
+  },
+  {
+    id: "vlog",
+    title: "Vlog Edit (Travel / Lifestyle)",
+    caption: "Dynamic vlog edits built for personality, pacing, and engagement.",
+    video: "https://res.cloudinary.com/dwgghvvtx/video/upload/v1764928776/PinDown.io__twilaaylaofficial_1764836113_c3mut9.mp4",
+    icon: <FaPlay />
+  },
+  {
+    id: "motion",
+    title: "Motion Graphics + Text Animation",
+    caption: "Professional motion graphics, lyric videos, intros & lower thirds.",
+    video: "https://res.cloudinary.com/dwgghvvtx/video/upload/v1764991542/WhatsApp_Video_2025-12-05_at_12.11.25_urkmii.mp4",
+    icon: <FaExternalLinkAlt />
+  },
+  {
+    id: "ministry",
+    title: "Ministry / Teaching Edits",
+    caption: "Impactful edits for sermons, testimonies, and teaching content.",
+    video: "https://res.cloudinary.com/dwgghvvtx/video/upload/v1764991843/WhatsApp_Video_2025-12-05_at_12.11.36_rw4ndh.mp4",
+    icon: <FaPlay />
+  }
+];
+
 
   // Duplicate items to allow seamless looping
   const loopItems = [...items, ...items, ...items]; 

@@ -36,22 +36,22 @@ const Contact = () => {
 
           <div className="info-box">
             <p><strong>Phone:</strong></p>
-            <p>+27 65 123 4567</p>
+            <p>+27 82 570 6915</p>
           </div>
 
           <div className="info-box">
             <p><strong>Email:</strong></p>
-            <p>info@godiousproductions.com</p>
+            <p>godiousproductions@gmail.com</p>
           </div>
 
           <div className="info-box">
             <p><strong>Location:</strong></p>
-            <p>Cape Town, South Africa</p>
+            <p>Pretoria</p>
           </div>
 
           <div className="info-box">
             <p><strong>Hours:</strong></p>
-            <p>Mon – Sat : 8:00 – 18:00</p>
+            <p>Mon – Sun : 8:00 – 23:00</p>
           </div>
         </div>
 
